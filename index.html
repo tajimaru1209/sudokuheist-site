@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sudoku Heist — Help &amp; Privacy</title>
+<meta name="description" content="Help and privacy policy for Sudoku Heist, a roguelike vault-cracking puzzle for iPhone.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --ink: #0e1014; --steel: #1a1d23; --steel-hi: #262a32;
+    --brass: #d1a857; --brass-deep: #8f6d30; --cream: #f2ead9;
+    --sub: #9da0a8; --alarm: #e64c42; --jade: #6bc9a0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--cream);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.018) 0 1px, transparent 1px 7px);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 16px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  header img { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 12px 40px rgba(0,0,0,.6); }
+  .kicker { margin: 22px 0 0; font-weight: 700; letter-spacing: .5em; font-size: 13px; color: var(--sub); }
+  h1 {
+    margin: 0; font-family: "New York", Georgia, "Times New Roman", serif; font-size: 64px; line-height: 1.05;
+    background: linear-gradient(#f3d38a, var(--brass) 55%, var(--brass-deep));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tag { color: rgba(242,234,217,.78); margin: 10px 0 0; }
+  section { background: var(--steel); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 24px 22px; margin: 18px 0; }
+  h2 { font-family: "New York", Georgia, serif; font-size: 26px; margin: 0 0 12px; color: var(--cream); }
+  h3 { font-size: 16px; margin: 18px 0 4px; color: var(--brass); letter-spacing: .02em; }
+  p { margin: 8px 0; }
+  ul { margin: 8px 0; padding-left: 20px; }
+  li { margin: 6px 0; }
+  .sub { color: var(--sub); }
+  .mult { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 4px; }
+  .mult span { background: var(--steel-hi); border: 1px solid rgba(209,168,87,.4); border-radius: 10px; padding: 8px 12px; font-family: ui-monospace, Menlo, monospace; font-weight: 700; color: var(--brass); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; }
+  @media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } h1 { font-size: 52px; } }
+  .alarm h3 { color: var(--alarm); }
+  a { color: var(--brass); }
+  .contact { display: inline-block; margin-top: 8px; padding: 12px 20px; border-radius: 12px; background: linear-gradient(#f3d38a, var(--brass) 55%, var(--brass-deep)); color: var(--ink); font-weight: 700; text-decoration: none; letter-spacing: .08em; }
+  footer { text-align: center; color: var(--sub); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="icon.png" alt="Sudoku Heist app icon">
+    <p class="kicker">SUDOKU</p>
+    <h1>Heist</h1>
+    <p class="tag">Crack nine vaults. Every number is loot.</p>
+  </header>
+
+  <section>
+    <h2>The job</h2>
+    <p>Sudoku Heist is a roguelike puzzle built on classic sudoku rules. Each run is three jobs of three vaults. Boards grow from 4×4 to 6×6 to 9×9, and every vault has a loot target you must reach before the board is full.</p>
+    <p>Solving is only half the game. <strong>The order you fill cells decides your score.</strong></p>
+  </section>
+
+  <section>
+    <h2>How scoring works</h2>
+    <p>A correct digit earns 10 plus its value. Completing a row, column or box multiplies that placement:</p>
+    <div class="mult"><span>1 line ×2</span><span>2 lines ×4</span><span>3 lines ×8</span></div>
+    <p>Save the cells that finish several lines at once, then cash them in for a big haul.</p>
+    <h3>Stealth</h3>
+    <p>Clean placements in a row build Stealth, which multiplies everything. A wrong digit costs a heart and resets Stealth. Lose every heart and the run is over.</p>
+    <h3>Reading the board</h3>
+    <p>Under the loot bar you'll see how many cells are left, how much loot you still need, and whether you're <em>On Pace</em>, <em>Tight</em> or <em>Falling Short</em>.</p>
+  </section>
+
+  <section>
+    <h2>Gadgets</h2>
+    <p>Between vaults, spend your cut at the Fence on gadgets that bend the scoring. You can carry four, and sell one back for half its price.</p>
+    <div class="grid2">
+      <p><strong>Box Cutter</strong><br><span class="sub">Completing a box is ×3.</span></p>
+      <p><strong>Tripwire</strong><br><span class="sub">Completing a row or column is ×3.</span></p>
+      <p><strong>Soft Shoes</strong><br><span class="sub">Stealth rises twice as fast.</span></p>
+      <p><strong>Final Turn</strong><br><span class="sub">The last cell of a vault scores ×10.</span></p>
+      <p><strong>Safety Net</strong><br><span class="sub">Your first mistake in each vault is free.</span></p>
+      <p><strong>Crowbar</strong><br><span class="sub">Vault targets are 20% lower.</span></p>
+    </div>
+    <p class="sub">…and eight more to discover.</p>
+  </section>
+
+  <section class="alarm">
+    <h2>Security systems</h2>
+    <p>The last vault of every job has a security system that changes the rules:</p>
+    <h3>Laser Grid</h3><p>Pencil notes are disabled.</p>
+    <h3>Silent Alarm</h3><p>The vault locks when the timer runs out.</p>
+    <h3>Pressure Plates</h3><p>Mistakes cost two hearts.</p>
+    <h3>Cold Digits</h3><p>Digits 1–3 earn no base loot.</p>
+  </section>
+
+  <section>
+    <h2>Questions</h2>
+    <h3>Is every puzzle solvable without guessing?</h3>
+    <p>Yes. Every board is generated on your iPhone and checked to have exactly one solution.</p>
+    <h3>Can I turn the sound off?</h3>
+    <p>Tap the speaker button on the title screen. Sound also follows your iPhone's silent switch.</p>
+    <h3>Does it need an internet connection?</h3>
+    <p>No. Sudoku Heist works fully offline.</p>
+    <h3>Can I see the rules again?</h3>
+    <p>Tap <em>How It Works</em> on the title screen. The first vault also shows tips while you play.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="sub">Last updated November 14, 2026</p>
+    <p>Sudoku Heist does not collect, store or share any personal information.</p>
+    <ul>
+      <li>No account, sign-in or registration.</li>
+      <li>No advertising, analytics or tracking of any kind.</li>
+      <li>No data is sent to any server. The app does not use the internet.</li>
+      <li>Your best score, tutorial progress and sound setting are saved only on your device and are removed when you delete the app.</li>
+    </ul>
+    <p>Because no data is collected, there is nothing to request, correct or delete. If this policy changes, the update will be posted on this page.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Found a bug or have an idea for a new gadget? Get in touch.</p>
+    <a class="contact" href="mailto:tajimaru1209@gmail.com?subject=Sudoku%20Heist%20Support">EMAIL SUPPORT</a>
+  </section>
+
+  <footer>© 2026 Hiroaki Tajima</footer>
+</div>
+</body>
+</html>
